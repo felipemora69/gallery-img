@@ -12,7 +12,7 @@ img{
   border-radius: 4px;
 }
 
-button{
+button {
   margin: 0 10px;
   margin-top: 30px;
   font-size: 15px;
@@ -22,10 +22,16 @@ button{
   width: auto;
   background-color: #174b1e;
   color: white;
-  border-color: #174b1e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+button:hover {
+  background-color: #13581f;
+}
 
-
-
-
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}

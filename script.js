@@ -2,8 +2,8 @@ const arrImages = ["image1.avif", "image2.avif", "image3.avif",];
 
 let currentImage = 0;
  
-document.getElementById('Previous').addEventListener("click", changeImage);
-document.getElementById('Next').addEventListener("click", changeImage);
+document.getElementById('prev').addEventListener("click", changeImage);
+document.getElementById('next').addEventListener("click", changeImage);
 window.addEventListener("load", function() {
     changeImage(0);
 });
@@ -16,9 +16,9 @@ window.addEventListener("load", function() {
  
 function changeImage() {
     var button = this.id;
-    if (button === 'Next') {
+    if (button === 'next') {
         currentImage = (currentImage + 1) % arrImages.length;
-    } else if (button === 'Previous') {
+    } else if (button === 'prev') {
         currentImage = (currentImage - 1 + arrImages.length) % arrImages.length;
     }
  
