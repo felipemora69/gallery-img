@@ -1,4 +1,4 @@
-const arrImages = ["image1.avif", "image2.avif", "image3.avif",];
+const arrImages = ["image1.jpg", "image2.jpg", "image3.jpg",];
 
 let currentImage = 0;
  
