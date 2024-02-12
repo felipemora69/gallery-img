@@ -1,27 +1,27 @@
-const images = [
-    "image1.jpg",
-    "image2.jpg",
-    "image3.jpg",
-    // Add more image links here
-  ];
-  
-  let currentIndex = 0;
-  const imgElement = document.getElementById("gallery-img");
-  
-  function showImage(index) {
-    imgElement.src = images[index];
-  }
-  
-  document.getElementById("prev-btn").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
-  });
-  
-  document.getElementById("next-btn").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-  });
-  
-  // Show the first image initially
-  showImage(currentIndex);
-  
+const arrImages = ["image1.avif", "image2.avif", "image3.avif",];
+
+let currentImage = 0;
+ 
+document.getElementById('Previous').addEventListener("click", changeImage);
+document.getElementById('Next').addEventListener("click", changeImage);
+window.addEventListener("load", function() {
+    changeImage(0);
+});
+ 
+    function changeImage(offset) {
+        currentImage = (currentImage + offset + arrImages.length) % arrImages.length;
+        var imageShowing = arrImages[currentImage];
+        document.getElementById('image').src = 'Images/' + imageShowing;
+    }
+ 
+function changeImage() {
+    var button = this.id;
+    if (button === 'Next') {
+        currentImage = (currentImage + 1) % arrImages.length;
+    } else if (button === 'Previous') {
+        currentImage = (currentImage - 1 + arrImages.length) % arrImages.length;
+    }
+ 
+    var imageShowing = arrImages[currentImage];
+    document.getElementById('image').src = 'Images/' + imageShowing;
+}

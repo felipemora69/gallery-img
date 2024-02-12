@@ -1,43 +1,31 @@
-.gallery-container {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  #gallery-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-  }
-  
-  .button-container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  #prev-btn {
-    float: left;
-  }
-  
-  #next-btn {
-    float: right;
-  }
-  
+body{
+  text-align: center;
+  background-color: #386138;
+}
+
+img{
+  width: 650px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 4px;
+}
+
+button{
+  margin: 0 10px;
+  margin-top: 30px;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  width: auto;
+  background-color: #174b1e;
+  color: white;
+  border-color: #174b1e;
+}
+
+
+
+
+
