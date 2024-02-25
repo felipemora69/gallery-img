@@ -1,4 +1,4 @@
-const arrImages = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg",];
+const arrImages = ["image1.jpg", "image2.jpg", "image3.jpg",];
 
 let currentImage = 0;
  
@@ -23,5 +23,5 @@ function changeImage() {
     }
  
     var imageShowing = arrImages[currentImage];
-    document.getElementById('image').src = 'Images/' + imageShowing;
+    document.getElementById('image').src = 'images/' + imageShowing;
 }
